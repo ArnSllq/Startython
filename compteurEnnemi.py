@@ -1,10 +1,11 @@
 #! usr/bin/env python
 
-import creerPerso.py
+import creerPerso
 
 
-def count(i):
+def count(i, Perso):
     if Perso[1] > 0:
         i += 1
+        return i
     else:
         return i

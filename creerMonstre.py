@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-import genMonstre.py
+import genMonstre
+
 
 def CreerMonstre():
-    nom = input("Donnez un nom au monstre")
-    genMonstre(nom)
+    nom = input("Donnez un nom au monstre : ")
+    return genMonstre.genMonstre(nom)

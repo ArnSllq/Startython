@@ -2,3 +2,4 @@
 
 def perso(pseudo, pv, force, armure):
     Perso = [pseudo, pv, force, armure]
+    return Perso

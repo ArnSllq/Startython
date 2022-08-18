@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
-import creerMonstre.py, creerPerso.py, Degat.py
+import Degat
+
 
 def GestionCombat(Perso, Monstre):
     while Perso[1] > 0 and Monstre[1] > 0:
-        Monstre = GestionDegats(Perso, Monstre)
-        Perso = GestionDegats(Monstre, Perso)
+        Monstre = Degat.GestionDegats(Perso, Monstre)
+        print(Monstre)
+        Perso = Degat.GestionDegats(Monstre, Perso)
+        print(Perso)
     return Perso

@@ -8,3 +8,4 @@ def genMonstre(nom):
     force = random.randrange(3, 9)
     armure = random.randrange(0, 6)
     Monstre = [nom, pv, force, armure]
+    return Monstre
